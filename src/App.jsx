@@ -1,13 +1,13 @@
 import React from 'react'
-import list from './list'
-import home from './home'
+import home from './components/home/home'
 import { BrowserRouter,Route,Switch,Link} from 'react-router-dom'
-import Registration from './form'
+import Registration from './components/form/form'
+import Info from "./components/getinfo/getinfo"
 import './App.css'
 
 function App(){
   return(
-    <>
+    
     <BrowserRouter> 
     <nav>
           <ul>
@@ -18,18 +18,19 @@ function App(){
               <Link to="/form" className="link">Registration Form</Link>
               </li>
             <li>
-              <Link to="/list" className="link">Patients</Link>
+              <Link to="/info" className="link">Patients</Link>
             </li>
           </ul>
         </nav>
+        <div className="container">
       <Switch>
         <Route  path="/form" component={Registration} />
         <Route path="/home" component={home}/>
-        <Route path="/list" component={list}/>
-        <Route path="/" component={home}/>
-      </Switch>             
+        <Route path="/info" component={Info}/>
+      </Switch>      
+      </div>       
     </BrowserRouter>
-   </>
+     
   )
 }
 
