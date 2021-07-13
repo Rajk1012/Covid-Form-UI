@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  background-color: Black;
+  font-size: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+}
+li{
+  color:whitesmoke;
+   text-align: right;
+  padding: 16px;
+ text-decoration: none;
+ list-style: none;
+}
+.link{
+text-decoration: none;
+color: whitesmoke;
+}
+
+.form{
+ height: auto;
+ width: 60%;
+ padding: 1%;
+ margin: auto;
+}
+
+.Header{
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.dropdown{
+  margin-left: 10px;
+}
