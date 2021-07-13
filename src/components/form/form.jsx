@@ -24,7 +24,9 @@ const Registration = () => {
       
     const handleSubmit = async (e) =>
     {
-        const resp = await axios.post("",{
+      e.preventDefault();
+      try{
+        const resp = await axios.post("http://127.0.0.1:5000/new",{
 
             "Name": form.name,
             "AdhaarNo": form.adhaar,
@@ -41,6 +43,16 @@ const Registration = () => {
             "SPO2": form.spO2
 
         });
+
+        if(resp.status === 200){
+          alert("Added");
+        }
+
+      }
+      catch(e){
+        console.log(e);
+      }
+        
     }
 
   return (    
