@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import './App.css'
-import object from './object'
 import { Button, Col, Form, Row } from 'react-bootstrap'
 import axios from 'axios'
 
