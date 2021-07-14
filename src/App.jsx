@@ -7,12 +7,16 @@ import './App.css'
 
 function App(){
   return(
-    
+    <>
     <BrowserRouter> 
-    <nav>
+    <nav style={{
+          position: "sticky",
+          top: "0",
+          zIndex: "1020"
+    }}>
           <ul>
             <li>
-              <Link to="/home" className="link">Home</Link>
+              <Link to="/" className="link">Home</Link>
             </li>
             <li>
               <Link to="/form" className="link">Registration Form</Link>
@@ -25,11 +29,13 @@ function App(){
         <div className="container">
       <Switch>
         <Route  path="/form" component={Registration} />
-        <Route path="/home" component={home}/>
         <Route path="/info" component={Info}/>
+        <Route path="/" component={home}/>
       </Switch>      
       </div>       
     </BrowserRouter>
+
+    </>
      
   )
 }
