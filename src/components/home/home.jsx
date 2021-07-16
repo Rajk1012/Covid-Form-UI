@@ -21,6 +21,13 @@ function home(){
             </Button>
         </Link>
         </div>
+        <div>
+        <Link to="/post" class="link">
+            <Button variant="success">
+               Post Covid Care
+            </Button>
+        </Link>
+        </div>
     </div>
     )
     

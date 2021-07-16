@@ -5,7 +5,7 @@ import Registration from './components/form/form'
 import { Button } from 'react-bootstrap'
 import Info from "./components/getinfo/getinfo"
 import './App.css'
-
+import post from './components/post/post'
 function App(){
   return(
     <>
@@ -44,6 +44,7 @@ function App(){
         <Route  path="/form" component={Registration} />
         <Route path="/info" component={Info}/>
         <Route path="/" component={home}/>
+        <Route path="/post" component={post}/>
       </Switch>      
       </div>       
     </BrowserRouter>
