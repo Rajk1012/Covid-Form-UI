@@ -50,7 +50,7 @@ const Registration = () => {
 
       }
       catch(e){
-        console.log(e);
+        alert("Already Added");
       }
         
     }
