@@ -2,6 +2,7 @@ import React from 'react'
 import home from './components/home/home'
 import { BrowserRouter,Route,Switch,Link} from 'react-router-dom'
 import Registration from './components/form/form'
+import { Button } from 'react-bootstrap'
 import Info from "./components/getinfo/getinfo"
 import './App.css'
 
@@ -16,13 +17,25 @@ function App(){
     }}>
           <ul>
             <li>
-              <Link to="/" className="link">Home</Link>
+              <Link to="/">
+                <Button variant="secondary" style={{fontSize:"1.2rem"}}>
+                  Home
+                </Button>
+              </Link>
             </li>
             <li>
-              <Link to="/form" className="link">Registration Form</Link>
+              <Link to="/form">
+                <Button variant="secondary" style={{fontSize:"1.2rem"}}>
+                  Registration Form
+                </Button>
+              </Link>
               </li>
             <li>
-              <Link to="/info" className="link">Patients</Link>
+              <Link to="/info">
+                <Button variant="secondary" style={{fontSize:"1.2rem"}}>
+                  Patients
+                </Button>
+              </Link>
             </li>
           </ul>
         </nav>
