@@ -18,21 +18,21 @@ function App(){
           <ul>
             <li>
               <Link to="/">
-                <Button variant="secondary" style={{fontSize:"1.2rem"}}>
+                <Button variant="light" style={{fontSize:"1.2rem"}}>
                   Home
                 </Button>
               </Link>
             </li>
             <li>
               <Link to="/form">
-                <Button variant="secondary" style={{fontSize:"1.2rem"}}>
+                <Button variant="light" style={{fontSize:"1.2rem"}}>
                   Registration Form
                 </Button>
               </Link>
               </li>
             <li>
               <Link to="/info">
-                <Button variant="secondary" style={{fontSize:"1.2rem"}}>
+                <Button variant="light" style={{fontSize:"1.2rem"}}>
                   Patients
                 </Button>
               </Link>
